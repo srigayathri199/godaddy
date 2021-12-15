@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: #5A3F37;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C7744, #5A3F37);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C7744, #5A3F37);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.nav {
+    width: 100%;
+    margin-left: 15%;
+}
+
+.nav>h1 {
+    text-align: left;
+    margin-top: 10px;
+    display: inline;
+}
+
+.nav>.arrow {
+    width: 5.3%;
+    margin: 8px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: black;
+    background-color: wheat;
+    border-radius: 100%;
+    padding: 0px 2px 0 2px;
+}
+
+.container {
+    max-width: 75%;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: wheat;
+    font-size: 3rem;
+}
+
+p {
+    color: white;
+}
+
+a {
+    color: whitesmoke;
+}
+
+.books {
+    display: flex;
+    column-gap: 20px;
+    row-gap: 10px;
+    width: 88%;
+    margin: auto;
+    justify-content: space-around;
+    margin-top: 65px;
+    flex-wrap: wrap;
+}
+
+.b {
+    text-align: center;
+    width: 30%;
+}

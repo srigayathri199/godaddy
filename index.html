@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>My Personal Website</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <section class="h1">
+            <h1>My Personal Blog</h1>
+        </section>
+
+        <section class="links">
+            <a href="./books.html">Favorite Books</a>
+            <a href="./Movies.html">Favorite Movies</a>
+            <a href="./shows.html">Favorite Shows</a>
+            <a href="#section4">Favorite Music</a>
+            <a href="#section5">Favorite Spotlight</a>
+        </section>
+
+
+        <button style="margin-bottom: 20px;margin-left: 10px;" class="button show-modal button2">Edit your favorites</button>
+        <section>
+            <h2>Things I Love</h2>
+        </section>
+        <section id="section1">
+            <h3>My Favorite Books</h3>
+            <h4>Fiction</h4>
+            <ul class="FbookList">
+                <li>Harry Potter Series</li>
+                <li><b>The Alchemist</b></li>
+                <li>The Push</li>
+            </ul>
+
+            <h4>Non-Fiction</h4>
+            <ul class="NfbookList">
+                <li>The Power of the Subconscious Mind</li>
+                <li><b>Sapiens</b></li>
+                <li>A brief History of Time</li>
+            </ul>
+
+        </section>
+
+        <section id="section2">
+            <h3>My Favorite Movies</h3>
+            <ul class="Movielist">
+                <li>Interstellar</li>
+                <li><b>Inception</b></li>
+                <li>Tenet</li>
+            </ul>
+        </section>
+
+        <section id="section3">
+            <h3>My Favorite Shows</h3>
+            <ul class="Showlist">
+                <li>Dark Series</li>
+                <li><b>Go Go squid</b></li>
+                <li>Strong Woman</li>
+            </ul>
+        </section>
+
+        <section id="section4">
+            <h3>My Favorite Music</h3>
+            <table border=1 style="background-color: burlywood;">
+                <thead>
+                    <td>Type of Music</td>
+                    <td>Title</td>
+                </thead>
+                <tr>
+                    <td>Jazz</td>
+                    <td>
+                        <ol>
+                            <li>Charles Mingus</li>
+                            <li>Miles Davis</li>
+                            <li>Art Blakey</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Rock</td>
+                    <td>
+                        <ol>
+                            <li>Queen</li>
+                            <li>The Beatles</li>
+                            <li>Slayer</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pop</td>
+                    <td>
+                        <ol>
+                            <li>Maroon 5</li>
+                            <li>Cold Play</li>
+                            <li>Weeknd</li>
+                        </ol>
+                    </td>
+                </tr>
+
+            </table>
+        </section>
+
+        <section id="section5">
+            <h3>Spotlight Favorite</h3>
+            <p>The whole concept of documentary movies seemed boring until recently. i watched the trending movie in town "Bohemian Rahapsody" which brought back a lot of my childhood memories and made me realise how well the lyrics could connect with the
+                audience , be it the 70s,80s,90s or the 00s.</p>
+        </section>
+
+        <section id="section6">
+            <h2>My Favorite Places</h2>
+            <div class="images">
+                <img width="318" height="168" alt="auroras" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlycYMhe9neMl0a6fEf89zv-e5-lX9ChRnxA&usqp=CAU">
+                <img width="318" height="168" alt="eiffelTower" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9hjAdvsYfIBUFUj-0TNRoACxdrp22cUJBVw&usqp=CAU">
+                <img width="318" height="168" alt="eiffelTower" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPeytkC2h1nHC56R8ZLKXOc6O7_5q8gHqoRQ&usqp=CAU">
+                <img width="318" height="168" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDwODfSR90t8Q3fUTUVLuZ8xNBj6W2MRTQOQ&usqp=CAU">
+            </div>
+            <p style="padding-top: 10px;">@ my blog. Feel free to republish with attribution.</p>
+        </section>
+
+        <section class="h1" style="margin-bottom: 10px;">
+            <footer>
+                <h1>Email me at Srigayathrikunta999@gmail.com</h1>
+            </footer>
+        </section>
+    </div>
+
+    <div style="font-family: sans-serif;" class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <h2 style="color:black">Add your Favorites😍</h2>
+        <form>
+
+
+            <h3>Select Book Type</h3>
+            <input id="fiction" name="book" type="radio">
+            <label for="fic">Fiction</label><br>
+            <input id="Non-fiction" name="book" type="radio">
+            <label for="Nfic">Non-Fiction</label><br><br>
+
+            <div id="formPopup"></div>
+
+            <h3>Select Movies or Shows</h3>
+            <input id="movie" name="show" type="radio">
+            <label for="movies">Movies</label><br>
+            <input id="show" name="show" type="radio">
+            <label for="shows">Shows</label>
+            <br><br>
+            <div id="formPopup1"></div>
+
+            <button class="button set">Set</button>
+            <input type="reset" class="button clear">
+        </form>
+    </div>
+    <div class="overlay hidden"></div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
